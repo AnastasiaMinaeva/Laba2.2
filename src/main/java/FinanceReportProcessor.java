@@ -70,7 +70,7 @@ public class FinanceReportProcessor {
         {
             throw new IllegalArgumentException("dataStr is null or empty");
         }
-        String[] data = dataStr.split("\\.");
+        String[] data = dataStr.split("\\."); //
         if(data.length != 3)
         {
             throw new IllegalArgumentException("Неверный формат даты: '" + dataStr + "'. Ожидается dd.mm.yy");
